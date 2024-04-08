@@ -1,7 +1,7 @@
 ### MovieCatalog
 ## Overview
 
-The Top Movies Catalog is an interactive web application designed to showcase a curated list of movies across various genres. This application allows users to search, filter, and sort movies as well as add new movies to the catalog. It features a responsive and intuitive interface for a seamless user experience.
+The Movies Catalog is an interactive web application designed to showcase a curated list of movies across various genres. This application allows users to search, filter, add, and delete movies as well as add new movies to the catalog. It features a responsive and intuitive interface for a seamless user experience.
 
 ## Features
 
