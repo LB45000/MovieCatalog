@@ -77,3 +77,76 @@ function showCards(filterGenre = "", searchTerm = "", sortKey = "") {
             card.style.display = "block";
             card.querySelector("h2").textContent = movie.title;
             card.querySelector(".movie-summary").textContent = movie.summary;
+            card.querySelector("img").src = movie.poster;
+            card.querySelector("img").alt = movie.title + " Poster";
+            
+            // Prepares elements for interactivity (e.g., showing/hiding summary, removing a movie).
+            const summary = card.querySelector(".movie-summary");
+            const removeButton = card.querySelector(".remove-movie");
+
+            // Toggles the visibility of the movie summary on card click, excluding clicks on the remove button.
+            card.addEventListener("click", function(event) {
+                if (event.target !== removeButton) {
+                    summary.style.display = summary.style.display === "none" ? "block" : "none";
+                }
+            });
+
+            // Adds an event listener to the remove button to handle movie removal from the list.
+            removeButton.addEventListener("click", function() {
+                removeMovie(genre, movie.title);
+            });
+
+            // Appends the populated card to the container for display.
+            cardContainer.appendChild(card);
+        });
+    });
+}
+
+// Handles updates to the movie display based on search input, invoking showCards with the search term.
+function handleSearch(e) {
+    const searchTerm = e.target.value;
+    showCards("", searchTerm);
+}
+
+// Handles genre filter changes, updating the movie display to match the selected genre.
+function handleFilter(e) {
+    const filterGenre = e.target.value;
+    showCards(filterGenre);
+}
+
+// Handles sort option changes, updating the movie display according to the selected sort key.
+function handleSort(e) {
+    const sortKey = e.target.value;
+    showCards("", "", sortKey);
+}
+
+// Allows adding a new movie to the dataset and updates the display to include the new entry.
+function addMovie() {
+    const title = document.getElementById("newTitle").value;
+    const summary = document.getElementById("newSummary").value;
+    const poster = document.getElementById("newPoster").value;
+    const genre = document.getElementById("newGenre").value;
+
+    // Validates that all fields are filled before adding the movie.
+    if (title && summary && poster && genre) {
+        // Initializes the genre array if it doesn't exist and adds the new movie.
+        if (!movies[genre]) movies[genre] = [];
+        movies[genre].push({ title, summary, poster });
+        showCards(); // Refreshes the movie cards display.
+        // Clears the input fields after adding the movie.
+        document.getElementById("newTitle").value = '';
+        document.getElementById("newSummary").value = '';
+        document.getElementById("newPoster").value = '';
+    } else {
+        alert("Please fill in all fields to add a movie."); // Alerts if any field is missing.
+    }
+}
+
+// Removes a movie from the dataset and updates the display to reflect the removal.
+function removeMovie(genre, title) {
+    // Checks if the genre exists and filters out the movie to be removed.
+    if (movies[genre]) {
+        movies[genre] = movies[genre].filter(movie => movie.title !== title);
+        showCards(); // Refreshes the display without the removed movie.
+    }
+}
