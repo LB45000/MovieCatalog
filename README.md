@@ -45,4 +45,5 @@ The Movies Catalog is an interactive web application designed to showcase a cura
 - **CSS:** Styles the page to improve the user experience.
 - **JavaScript:** Adds interactivity to the web application, enabling dynamic content manipulation based on user actions.
 
-
+## Live Weebsite
+you can also checkout the live website here: https://topmoviecatalog.netlify.app/
