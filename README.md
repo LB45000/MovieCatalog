@@ -10,7 +10,7 @@ The Movies Catalog is an interactive web application designed to showcase a cura
 - **Genre Filtering:** Movies can be filtered by genre using a dropdown menu. The options include Comedy, Horror, and Action, but the application is designed to support additional genres as needed.
 - **Sorting Option:** Users can sort the movie listings alphabetically.
 - **Add New Movies:** A form allows users to contribute new movies to the catalog by providing a title, summary, poster URL, and genre.
-- **Interactive Movie Cards:** Each movie card can be interacted with. Clicking on a card toggles the display of the movie's summary, and a "Remove" button on each card allows users to remove movies from the catalog.
+- **Interactive Movie Cards:** Each movie card can be interacted with. Clicking on a card toggles the display of the movie's summary, and a Remove button on each card allows users to remove movies from the catalog.
 
 ## Installation
 
@@ -34,10 +34,10 @@ The Movies Catalog is an interactive web application designed to showcase a cura
 
 - **Viewing Movies:** Simply open the index.html file in a web browser to see the movie listings.
 - **Searching for Movies:** Enter a search term in the search bar to dynamically filter the movie listings.
-- **Filtering by Genre:** Select a genre from the "All Genres" dropdown to filter the listings.
-- **Sorting Movies:** Select "Alphabetical order" from the "Sort by" dropdown to sort the movie listings.
-- **Adding New Movies:** Fill out the form with the movie's title, summary, poster URL, and genre, then click "Add Movie" to include it in the catalog.
-- **Removing Movies:** Click the "Remove" button on a movie card to delete it from the listing.
+- **Filtering by Genre:** Select a genre from the All Genres dropdown to filter the listings.
+- **Sorting Movies:** Select Alphabetical order from the "Sort by" dropdown to sort the movie listings.
+- **Adding New Movies:** Fill out the form with the movie's title, summary, poster URL, and genre, then click Add Movie to include it in the catalog.
+- **Removing Movies:** Click the Remove button on a movie card to delete it from the listing.
 
 ## Technologies Used
 
