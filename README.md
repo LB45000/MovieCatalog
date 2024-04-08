@@ -23,7 +23,7 @@ The Movies Catalog is an interactive web application designed to showcase a cura
 2. **Navigate to the project directory:**
 
     
-    cd top-movies-catalog
+    cd MovieCatalog
     
 
 3. **Open the `index.html` file in a web browser.**
