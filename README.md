@@ -17,7 +17,7 @@ The Movies Catalog is an interactive web application designed to showcase a cura
 1. **Clone the repository:**
 
   
-    git clone <repository-url>
+    git clone https://github.com/LB45000/MovieCatalog/tree/main
     
 
 2. **Navigate to the project directory:**
