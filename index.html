@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Movies Catalog</title>
+    <meta name="description" content="A Catalog of Top Movies Across Different Genres">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="title">Top Movies Catalog</h1>
+        <input id="searchInput" type="text" placeholder="Search movies...">
+        <select id="genreSelect">
+            <option value="">All Genres</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="action">Action</option>
+        </select>
+        <select id="sortSelect">
+            <option value="">Sort by</option>
+            <option value="title">Alphabetical order</option>
+        </select>
+    </header>
+    <div id="addMovieForm">
+        <input type="text" id="newTitle" placeholder="Title">
+        <input type="text" id="newSummary" placeholder="Summary">
+        <input type="text" id="newPoster" placeholder="Poster URL">
+        <select id="newGenre">
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="action">Action</option>
+        </select>
+        <button onclick="addMovie()">Add Movie</button>
+    </div>
+    <div id="card-container"></div>
+    <div class="card" style="display: none;">
+        <div class="card-content">
+            <h2>Movie Title</h2>
+            <p class="movie-summary" style="display:none;">Movie Summary</p>
+            <img src="" alt="Movie Poster">
+            <button class="remove-movie">Remove</button>
+        </div>
+    </div>
+    
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>&copy; 2024 Luis Bravo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
