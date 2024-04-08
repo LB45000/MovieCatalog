@@ -1,4 +1,4 @@
-// Add a listener for the "DOMContentLoaded" event to ensure that the script runs only after the DOM has fully loaded.
+// Add a listener for the DOMContentLoaded event to ensure that the script runs only after the DOM has fully loaded.
 document.addEventListener("DOMContentLoaded", function() {
     // Call the showCards function to display movie cards on the page immediately after the DOM has loaded.
     showCards();
