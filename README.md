@@ -1,13 +1,13 @@
 ### MovieCatalog
 ## Overview
 
-The Movies Catalog is an interactive web application designed to showcase a curated list of movies across various genres. This application allows users to search, filter, add, and delete movies as well as add new movies to the catalog. It features a responsive and intuitive interface for a seamless user experience.
+The Movies Catalog is an interactive web application designed to showcase a curated list of movies across various genres. This application allows users to search, filter, add, and delete movies. It features a responsive and intuitive interface for a seamless user experience.
 
 ## Features
 
 - **Dynamic Movie Display:** Movies are displayed with their titles, summaries, and posters as soon as the Document Object Model (DOM) is fully loaded.
 - **Search Functionality:** Users can dynamically search for movies by typing into the search bar. The movie listings update in real-time with each keystroke.
-- **Genre Filtering:** Movies can be filtered by genre using a dropdown menu. The options include Comedy, Horror, and Action, but the application is designed to support additional genres as needed.
+- **Genre Filtering:** Movies can be filtered by genre using a dropdown menu. The options include Comedy, Horror, and Action.
 - **Sorting Option:** Users can sort the movie listings alphabetically.
 - **Add New Movies:** A form allows users to contribute new movies to the catalog by providing a title, summary, poster URL, and genre.
 - **Interactive Movie Cards:** Each movie card can be interacted with. Clicking on a card toggles the display of the movie's summary, and a Remove button on each card allows users to remove movies from the catalog.
